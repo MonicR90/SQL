@@ -1,3 +1,5 @@
+--Create a clothing store database
+
 CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, aisle INTEGER, price INTEGER, material TEXT);
 
 INSERT INTO clothing VALUES (1, "Shirts", 2,12, "Sheer");
@@ -6,11 +8,11 @@ INSERT INTO clothing VALUES (3, "Shorts", 6,8, "Low Rise");
 INSERT INTO clothing VALUES (4, "Socks", 8,6, "Cotton");
 INSERT INTO clothing VALUES (5, "Shoes", 10,7, "Sneakers");
 
+
+--display the database ordered by price. 
 SELECT *FROM clothing
 WHERE price <=12
 ORDER BY price desc;
 
 
---display the database ordered by price. 
-SELECT * FROM store
-ORDER BY price desc;
+
